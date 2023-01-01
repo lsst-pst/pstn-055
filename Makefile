@@ -2,6 +2,8 @@ DOCTYPE = PSTN
 DOCNUMBER = 055
 DOCNAME = $(DOCTYPE)-$(DOCNUMBER)
 
+TMP = $(shell git config --global --add safe.directory /workspace)
+
 tex = $(filter-out $(wildcard *acronyms.tex) , $(wildcard *.tex))
 
 GITVERSION := $(shell git log -1 --date=short --pretty=%h)
@@ -12,7 +14,6 @@ ifneq "$(GITSTATUS)" ""
 endif
 
 export TEXMFHOME ?= lsst-texmf/texmf
-
 $(DOCNAME).pdf: $(tex) meta.tex local.bib authors.tex acronyms.tex
 	latexmk -bibtex -xelatex -f $(DOCNAME)
 
