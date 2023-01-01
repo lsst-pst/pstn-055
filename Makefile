@@ -14,7 +14,7 @@ ifneq "$(GITSTATUS)" ""
 endif
 
 export TEXMFHOME ?= lsst-texmf/texmf
-$(DOCNAME).pdf: $(tex) meta.tex local.bib authors.tex acronyms.tex
+$(DOCNAME).pdf: $(tex) meta.tex local.bib acronyms.tex
 	latexmk -bibtex -xelatex -f $(DOCNAME)
 
 # Acronym tool allows for selection of acronyms based on tags - you may want more than DM
