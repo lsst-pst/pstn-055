@@ -2,8 +2,25 @@
 \input{meta}
 
 % Package imports go here.
+\usepackage{graphicx} %Loading the package
+\graphicspath{{figures/}}
+% Local commands go here.
+\usepackage[export]{adjustbox}
+
+\usepackage{placeins}
 
 % Local commands go here.
+
+\newcommand{\question}[1]{{\color{red} #1}} 
+\newcommand{\roughdraft}[1]{{\color{blue} #1}}
+\newcommand{\predraftnotes}[1]{{\color{orange} #1}}
+\newcommand{\degsq}{\ensuremath{\mathrm{deg}^2}}
+\newcommand{\ebv}{\ensuremath{E(\mathrm{B-V})}}
+\newcommand{\opsim}{\texttt{OpSim}}
+\newcommand{\degree}{\ensuremath{^{\circ}}}
+\defcitealias{PSTN-053}{PSTN-053}
+\defcitealias{PSTN-051}{PSTN-051}
+\defcitealias{LPM-17}{SRD}
 
 %If you want glossaries
 %\input{aglossary.tex}
