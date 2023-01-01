@@ -1,0 +1,98 @@
+\subsection{Microsurvey Recommendations}\label{q:Micro}
+
+
+In ``Phase 1'' (\citetalias{PSTN-053}, Q2), the SCOC  defined microsurveys as separate observing programs within LSST that take less than 3\% of the survey time. The following proposed programs\footnote{\url{https://docs.google.com/spreadsheets/d/1Nb-xOi_jxEYdHWGsbPWL2Y1d318Xc_GkMKCxoDo6TnM/edit?usp=sharing}} were recommended for Phase 2 consideration and simulation:
+
+1) short twilight visits for near-Sun objects including NEOs (\emph{NEO twilight survey}), 
+
+2) ToO follow-up to identify counterparts to Gravitational Wave sources, 
+
+3) a mini-survey/DDF of Roman microlensing bulge fields,
+
+4) a limited-visit survey of sky to Dec $< +30\degree $~(\emph{Northern Strip survey}),
+
+5) a static short exposure map of the sky in $ugrizy$,
+
+6) a static to transient short exposure survey, 
+
+7) a minisurvey of the Virgo cluster to WFD depth, 
+
+8) deeper $g$-band imaging of 10 local volume galaxies,
+
+9) a high cadence survey of two fields in the Small Magellanic Cloud (SMC) for microlensing. 
+
+An additional survey (10) for which \opsim\ simulations are available, such that it can be considered here, observed the Carina Nebulae and star-forming regions for the study of Young Stellar Objects (YSOs).  
+
+The Virgo Cluster (7) has already been incorporated into the new baseline and recommended by the SCOC in its ``Phase 2" Footprint recommendation (see \autoref{q:Footprint}). The ToO microsurvey (2) is discussed in a separate recommendation (see \autoref{q:ToO}). 
+Since we can treat the short-exposure surveys (5) and (6) as variations on the same microsurvey, this leaves seven microsurveys for which the SCOC should release a recommendation.
+
+Upon receipt of the simulations of these microsuveys, the SCOC considered the total amount of time available for microsurveys, and concluded that this is very uncertain due to uncertainty about the performance of the system as built and to the yet-to-be-determined plan for Early Science (see \autoref{q:Early}). Hence the SCOC concluded that only a small number of microsurveys should be included in our Phase 2 recommendation to be executed in the first year or two of operations. Recommendations about microsurveys to be started late should instead await clarity on system performance and expected availability of survey time. 
+
+We recognize that the Rubin user community has invested substantial time in developing and proposing a large number of other scientifically compelling microsurveys. Some of these surveys may well be important and productive uses of Rubin.
+ However, the SCOC also finds that there are convincing reasons to defer the recommendation of additional microsurveys at the present time. All proposed microsurveys depend on important details of the system performance that are not yet known. The most essential of these details is the amount of time available for microsurveys beyond the WFD (which hinges on key decisions such as the use of 2x15s or 1x30s exposures), with other important factors including the precise per-filter imaging sensitivity and, in a broader sense, the expected shift in scientific landscapes that Rubin is poised to enable. For these reasons the SCOC concludes that a prioritization of additional microsurveys undertaken \emph{after} the start of operations can come to much more compelling recommendations than one undertaken now.
+
+
+
+%However, at this time, the total amount of time available for microsurveys is very uncertain due to uncertainty about the performance of the system as built and to the yet-to-be-determined plan for Early Science (see \autoref{q:early}). Only a small number of microsurveys should be included in our Phase 2 recommendation to be executed  \emph{in the first year or two of operations}. Beyond that, the SCOC annual revisions to the survey recommendation will be able to prioritize and recommend future microsurveys. 
+
+\subsubsection{SCOC recommendations: executive summary}\label{rec:microsurvey_ec}
+
+With the goal of recommending only one or two microsurveys for implementation in year 1 we engaged in a prioritization process using the following criteria. In order to be recommended in year 1, the microsurvey must show that:
+
+\begin{enumerate}[label=(\roman*)]
+    \item there is a net scientific loss if the survey is delayed. This can be either because of its time-sensitive nature (for example because of interaction with other surveys or events), or because there are compelling reasons for the microsurvey to be run for most or all of the 10 years of LSST;
+    \item it takes advantage of the unique characteristics of Rubin;
+    \item it leads to a well-defined and justified scientific benefit.
+\end{enumerate}
+
+{\bf The SCOC found that two of the submitted microsurvey proposals comply with all three defined requirements and we recommend them at this time to be performed in year 1 with implementation in this specific priority order: \emph{first}, the NEO twilight survey; \emph{second}, if time is available, the Northern Strip survey}.
+
+
+%A prioritization of microsurveys to be undertaken after Y1 can come to much more compelling recommendations with increased knowledge of the system performance, and thus the true time available for microsurvey programs, and the expected shift in the scientific landscapes that Rubin is poised to enable. 
+
+We note that in this prioritization process we have not considered any proposal that requires less than about 0.3--0.5\% of the time (sometimes these proposals have been referred to as ``nano-surveys'') as part of the Phase 2 recommendation.  Some of these surveys may constitute important and productive uses of Rubin as well .
+
+\textbf{The SCOC recommends a call for revised and new microsurveys and nano-surveys once the amount of available time and system characteristics are better understood}. The timing of this call will be determined with Rubin Observatory's operations team.
+
+Below we describe the recommended implementation for the two microsurveys that the SCOC is endorsing to start in year 1 of LSST, as well as providing considerations for the other reviewed proposals.
+
+\subsubsection{NEO twilight survey}
+We recommend the NEO twilight survey (1) for implementation from the start of operations: (i) the near-Earth environment is changing in real time with the launching of satellite constellations which could make the survey less effective, or even unfeasible, later in LSST, and the expectation is that this survey would run for most or all of LSST; (ii) this survey makes unique use of Rubin, taking full advantage of its \textit{étendue}; (iii) the survey is scientifically compelling with its ability to detect small bodies inward of the Earth’s orbit as well as potential interstellar objects. 
+Early implementation would also allow quick evaluation of the results of the survey strategy, and tweaking or wholesale reworking of the strategy as necessary.
+
+
+{\bf Implementation details}: 
+The simulations the SCOC evaluated for this round of recommendations (v2.2) used 15 second exposures.\footnote{Earlier implementations of this microsurvey included fast sequences of short exposures. However, to remain within the camera image sequence time baseline of 1 image/15 seconds, 15 second exposure implementations were tested and resulted in improved performance due to increased detectability in the faint regime.} The preliminary SSSC input in the v2.2 simulations is that the best balance of discovery potential for the full range of small SSOs is achieved with the ``np4'' cadence (1 night on/3 nights off; $\sim$2\% of the total survey time), but the ``np6'' cadence (3 nights on/4 nights off; $\sim$3.2\% of the total survey time) also produces excellent results. Given similar performance, the current SCOC recommendation is for the more efficient ``np4'' cadence. %The ``np6'' cadence is superior for light curve inversion of NEOs and PHAs (and marginally better in completeness) as well as being better for Vatira discovery, but is worse than ``np4'' for main belt asteroids and Trojans. Running the twilight survey frequently (e.g., every night) is actually counterproductive for some solar systems metrics, as only looking near the Sun reduces discovery of some faint objects that would otherwise be discovered in standard WFD data.\footnote{this conclusion could change if the twilight time were spent on non-WFD observations.}
+Based on the SSSC metrics, we recommend $riz$ observations and implementing the survey with four visits per night. This proposed NEO twilight survey implementation has minimum impacts on the WFD metrics (including astrometry metrics): median parallax and proper motion across $18,000 \degsq$ at the < 2\% level, and the median parallax–DCR degeneracy is still low (correlation 0.36 \textit{vs} 0.33 in the \texttt{baseline\_v2.1}) and in the acceptable range $\lesssim 0.7$. 
+We note that while not currently simulated, there are some tweaks to the implementation of the NEO twilight survey that would use a similar amount of time but with potentially superior results. A possible implementation that should be explored with additional simulations would be with visit pairs (rather than quads), likely combined with a more frequent cadence such as ``np2'' (every other night), to evaluate if this leads to an increased detection rate. It may be possible to explore these alternative cadences during Rubin Commissioning.
+
+Another implementation that could be explored is to run the NEO survey only in the \emph{morning} twilight, instead of both morning and evening. This would allow more follow-up than evening-only observations (while evening-only observations would be poor for follow-up and should not be considered as a viable strategy for this microsurvey). Since the need for additional follow-up is not fully understood, it may be reasonable to start with both evening/morning observations for year 1 and re-evaluate after that, or perhaps sufficient data will be available based on the results of Commissioning and Science Verification.
+
+A final point of potential exploration is how close to the Sun observations are made: there are potential scientific benefits to observing closer to the Sun than horizon distances of $< -12 \degree$, but the NEO twilight survey is also expected to be negatively affected by the increasing number of satellites in constellations, which are preferentially illuminated near dusk and dawn. The effects of satellites on the NEO twilight survey have not been modeled in detail, and on-sky data is likely needed to assess the ideal solar horizon observing limit. %These satellites are one reason that it may be desirable to limit the survey to solar horizon distances < -12 deg, even though there are also potential scientific benefits to observing closer to the Sun.
+
+
+\subsubsection{Northern Strip survey}
+If a sufficient amount of time is available to microsurveys, based on the final WFD implementation and the efficiency of the system as built, we recommend that the second microsurvey to be undertaken in year 1 be {the Northern Strip survey (4)}.
+
+This is a shallow survey of the area not already covered up to Dec=+30\degree with a restricted number of filters ($griz$) and visits (<1\% of total time) to enhance Rubin/Euclid synergies for mutually important science goals, including potential co-processing of the data at the pixel level. The version of this microsurvey simulated (\texttt{north\_stripe\_v2.0}) had a very small impact on most WFD metrics, thus we believe that this survey is worth undertaking. However, since Euclid may not observe this northern area until several years after the start of Rubin, the synergy with Euclid does not constitute a compelling scientific case to implement these northern visits in the first year of operations (we note, however, that these timescales may change and that additional surveys are synergistic with Rubin in this sky area, including DESI and SDSS-V, as well as Rubin's own ToO program). We recommend this as the second priority for a microsurvey, as we find that the science case is well-developed and the observing plan is robust to the necessary high airmass observations. If a Rubin ToO program is to start in year 1 (\autoref{q:ToO}), then we recommend engaging in this microsurvey early so as to provide templates in this region that would be needed for ToOs.
+
+\emph{We recommend that the specific implementation of this survey should be reevaluated and optimized iteratively by the SCOC and the Euclid team and implementation details changed as needed while maintaining the time envelope of the presently simulated Northern Strip survey ($<1\%$).}
+
+%(to not surpass the time requirements of the presently simulated Northern Strip survey).
+
+
+
+\subsubsection{Evaluation of and recommendations for microsurveys not recommended for year 1 implementation at this time}
+
+The SCOC found that the current versions of the remaining microsurvey proposals did not (yet) satisfy at least one of the three requirements listed above to the same degree as the recommended proposals. We briefly describe these evaluations below and suggest that they be considered when revising a proposal for a future microsurveys call.
+
+(3) Minisurvey/DDF of Roman microlensing bulge field: The SCOC did not see the selection of this microsurvey as time-sensitive since Roman's schedule is uncertain and Roman is likely to start observations well after Rubin's year 1. The SCOC also found that this proposal did not demonstrate that this project requires the specific capabilities of Rubin: the SCOC thought it was possible that other instruments like DECam could achieve the same scientific goals, given the small Roman field of view. . 
+
+(5)/(6) Short exposure survey, with single or multiple epochs: proposal (5) made the case that short exposures (max 5 seconds, perhaps as low as 1--2 seconds) would enable high-fidelity photometric and astrometric calibration to brighter objects. While this is potentially compelling, it falls under the remit of the Rubin Project to perform proper calibration. Rubin Project should evaluate if short exposures for calibration are necessary (\emph{e.g.}, to tie the Rubin photometric or astrometric system to existing systems), but deciding on calibration observations is not within the purview of the SCOC. Proposal (6) for a multiple-epoch short exposure variable/transient or astrometric survey did not demonstrate the unique benefits of Rubin compared to existing/ongoing surveys for bright variables/transients or for bright star astrometry with Gaia.
+
+(8) Deeper $g$-band imaging of 10 Local Volume galaxies: this proposal did not demonstrate time sensitivity that justifies undertaking the survey in year 1 of Rubin operations. Furthermore, the precise time request for this survey, which requires very deep imaging, depends on the to-be-demonstrated system properties, so it is beneficial to wait to evaluate its details until 
+after operations have begun. 
+
+(9) High cadence survey of two fields in the SMC for microlensing: this proposal is not demonstrably time-sensitive to do in year 1 of Rubin operations. 
+
+(10) The YSO proposal (which includes the Carina Nebula and other star-forming regions): this proposal for time-series observations to characterize variable young stellar objects has not been shown to clearly take advantage of the unique characteristics of Rubin, and many of the scientific goals appear to be achievable with smaller field-of-view imagers, such as DECam. The number of YSOs per star-forming region as well as the number of different regions that need to be observed to accomplish the scientific goals are not justified clearly enough to demonstrate that the survey is time-sensitive to be undertaken in year 1 of Rubin operations.
