@@ -1,6 +1,6 @@
 \subsection{Filter Distribution}\label{q:Filters}
 
-The Phase 1 SCOC report recommended implementing a single exposure for $u$ band visits (see \citetalias{PSTN-053} Q3), and maintaining overall visit times of 30 seconds for all other bands instead of variable visit (or exposure) times. Specific questions concerning filter balance, particularly considering a bluer skew of the survey (see \citetalias{PSTN-053} Q4), and more consideration of varying exposure time per visit were left to be addressed in Phase 2 report with the support of v2.X simulations. The specific questions to be addressed in the Phase 2 SCOC deliberations include:
+The Phase 1 SCOC report recommended implementing a single exposure for $u$ band visits (see \citeds{PSTN-053} Q3), and maintaining overall visit times of 30 seconds for all other bands instead of variable visit (or exposure) times. Specific questions concerning filter balance, particularly considering a bluer skew of the survey (see \citeds{PSTN-053} Q4), and more consideration of varying exposure time per visit were left to be addressed in Phase 2 report with the support of v2.X simulations. The specific questions to be addressed in the Phase 2 SCOC deliberations include:
 
 
 
@@ -20,7 +20,7 @@ The SCOC has converged on most recommendations relating to filter distribution a
 
 \begin{enumerate}
 
-\item The SCOC recommends that the WFD filter balance implemented in \texttt{baseline\_v2.1}  be maintained in the low-dust WFD survey.\footnote{The depth by filter as implemented in simulation \texttt{baseline\_v2.0} is reported in \citep{PSTN-054} Table 3. The filter balance is essentially unchanged since \texttt{baseline\_v1.7}.} Skewing the WFD survey strategy towards bluer filter observations would harm several science cases while providing benefits only to a few. 
+\item The SCOC recommends that the WFD filter balance implemented in \texttt{baseline\_v2.1}  be maintained in the low-dust WFD survey.\footnote{The depth by filter as implemented in simulation \texttt{baseline\_v2.0} is reported in \citeds{PSTN-054} Table 3. The filter balance is essentially unchanged since \texttt{baseline\_v1.7}.} Skewing the WFD survey strategy towards bluer filter observations would harm several science cases while providing benefits only to a few. 
 SSSC and DESC science do not favor bluer filter observations (as presented in their reports).
 The filter balance notebook\footnote{
 \url{https://github.com/lsst-pst/survey_strategy/blob/main/fbs_2.0/Filter\%20Balance.ipynb}
@@ -29,7 +29,7 @@ The filter balance notebook\footnote{
 
 \item Conversely, although Galactic TVS science does not favor blue-enhanced $u$ and $g$ coverage, as it causes a detrimental decrease in performance for almost all regions,  different minisurveys as well as the Galactic Plane may benefit from changes to the default balance. \emph{The SCOC is not ready to produce a final recommendation for the filter balance for the Galactic Plane/Bulge or SCP region - we will continue working with the SMWLV and TVS SCs to find the best filter balance for Galactic science (see also \autoref{q:Footprint}).}
 
-\item There is no evidence for significant performance improvements with either increased or variable $u$-band visit exposure length. We, therefore, recommend that the $u$-band 30 second exposure time implemented as a single 1x30s exposure visit so as to avoid becoming read-noise dominated \citep{PSTN-053},  be preserved.
+\item There is no evidence for significant performance improvements with either increased or variable $u$-band visit exposure length. We, therefore, recommend that the $u$-band 30 second exposure time implemented as a single 1x30s exposure visit so as to avoid becoming read-noise dominated (\citeds{PSTN-053}),  be preserved.
 
 As the basis for this conclusion, the SCOC considered several factors.  The reports from the SSSC disfavor the \texttt{long-$u$} simulation family. Simulations with the same number of $u$ visits as the \texttt{baseline\_v2.1} but a 50s exposure time showed enhanced results for X-ray binaries, the Galactic Bulge, and pencil beam fields in the $u$-band, but at the expense of observations in the other filters which are more important for most galactic transient science, which therefore does not overall favor longer or variable-length $u$ exposures. Increased $u$-band might lead to the enhanced discovery of new transient  extragalactic objects but may disfavor studies of kilonovae which are expected to be red in color (as reported in the TVS SC extragalactic science report).
 
